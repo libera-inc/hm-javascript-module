@@ -251,17 +251,14 @@ component > title
 layout > container
 ------------------------------
 */
-.l-container, .l-container-s {
-  width: 90%;
-  margin: 0 auto;
-}
-
 .l-container-s {
-  max-width: var(--width-content-s);
+  width: min(90%, var(--width-content-s));
+  margin-inline: auto;
 }
 
 .l-container {
-  max-width: var(--width-content);
+  width: min(90%, var(--width-content));
+  margin-inline: auto;
 }
 
 /*!
@@ -287,6 +284,4 @@ page > about > about-common
 /*!
 page > about > about-kv
 ------------------------------
-*/
-
-/*# sourceMappingURL=style.css.map */
+*//*# sourceMappingURL=style.css.map */

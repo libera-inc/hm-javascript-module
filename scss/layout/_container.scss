@@ -4,17 +4,12 @@
 layout > container
 ------------------------------
 */
-%container {
-    width: 90%;
-    margin: 0 auto;
-}
-
 .l-container-s {
-    @extend %container;
-    max-width: var(--width-content-s);
+    width: min(90%, var(--width-content-s));
+    margin-inline: auto;
 }
 
 .l-container {
-    @extend %container;
-    max-width: var(--width-content);
+    width: min(90%, var(--width-content));
+    margin-inline: auto;
 }
